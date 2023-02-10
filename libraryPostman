@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "61ec10da-188d-441a-9a49-8c2ab57ff1ca",
+		"name": "Library management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24994942"
+	},
+	"item": [
+		{
+			"name": "add Library",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"librarySNo\":\"10\",\r\n    \"libraryRegNo\":\"R1\",\r\n    \"name\":\"Ramu Study point\",\r\n    \"address\":\"Lalpur Ranchi\",\r\n    \"number\":\"7412587412\",\r\n    \"facilities\":\"Ac/Non-Ac\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/addLibrary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addLibrary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by no",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/getLibraryByLNo/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getLibraryByLNo",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/getAllLibrary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getAllLibrary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update by no ",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"librarySNo\":\"1\",\r\n    \"libraryRegNo\":\"R1\",\r\n    \"name\":\"Ankit Study point\",\r\n    \"address\":\"Lalpur Ranchi\",\r\n    \"number\":\"7412587412\",\r\n    \"facilities\":\"Only Ac\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/updateLibrary/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updateLibrary",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete by no",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/deleteLibrary/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deleteLibrary",
+						"10"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
